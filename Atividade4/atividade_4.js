@@ -20,24 +20,34 @@
 
 let preco = parseFloat(prompt("Digite o preço do produto: "))
 let quant = parseFloat(prompt("Digite a Quantidade do produto"))
+
 function calcularTotal(preco,quant){
     return preco*quant;
 
 }
+
 let total = calcularTotal(preco,quant);
 
 function aplicarDesconto(total){
     if(total > 100){
         total = total-(total*0.1)
-        return total;
-    }else{
         return total
+    }else{
+        return total;
     }
 }
 
-let exibir = aplicarDesconto(total)
 
-function exibirResumo(exibir){
-    console.log(exibir)
+function exibirResumo(){
+   console.log("Valor total da compra: "+total)
+   console.log("Valor total com o desconto: "+aplicarDesconto(total))
+
 }
+
+let exibia = exibirResumo()
+
+
+
+
+    
 

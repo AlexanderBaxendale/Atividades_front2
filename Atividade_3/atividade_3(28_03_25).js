@@ -9,21 +9,22 @@
 console.log("Primeira Questão!\n")
 let nomes = ["Alexander","Augusto","Paulo","Sabrina","Maria"];
 
-console.log(nomes[2])
+console.log("Terceiro nome da lista: "+nomes[2])
 
 //2•Adicione um nome ao final e um no início do array.
 console.log("\nSegunda Questão!\n")
+console.log("\nLista Atual");
 console.log(nomes)
+console.log("\nLista adiconando nome na primeira e ultima posição");
 nomes.unshift("Aline")
 nomes.push("Roberto")
-
 console.log(nomes)
 
 //3•Remova o último nome e exiba o array atualizado.
 console.log("\nTerceira Questão!\n")
 console.log("\nLista Atual");
 console.log(nomes)
-console.log("\nLista sem o último elemento");
+console.log("Lista sem o último elemento");
 nomes.pop()
 console.log(nomes);
 
